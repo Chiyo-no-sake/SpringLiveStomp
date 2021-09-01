@@ -4,7 +4,7 @@ It lets you define custom events and map those event to an endpoint, available f
 libraries.
 
 ## Client libraries
-
+;:
 Client libraries currently developed:
 
 <ul>
@@ -12,7 +12,21 @@ Client libraries currently developed:
 </ul>
 
 ### Installation
-Just define the dependency in you project pom.xml like the following:
+First, add the github repo for SpringLiveStomp in your pom.xml:
+```xml
+<repositories>
+    <repository>
+        <id>SpringLiveStomp-mvn-repo</id>
+        <url>https://github.com/KatonKalu/SpringLiveStomp/raw/mvn-repo/</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
+    </repository>
+</repositories>
+```
+
+Now just define the dependency in you project pom.xml like the following:
 
 ```xml
 <dependency>
